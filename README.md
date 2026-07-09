@@ -1,22 +1,16 @@
-# Hammad Shahid's Photography and Videography Portfolio
+# React + Vite
 
-Welcome to Hammad Shahid's online portfolio! This website showcases an extensive collection of Hammad's work in photography and videography, capturing moments and creating visual stories. 
+This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
-## About Hammad Shahid
-Hammad Shahid is a professional photographer and videographer with over 7 years of experience in the industry. His passion for visual arts is evident in every project he undertakes, from candid moments to meticulously planned shoots.
+Currently, two official plugins are available:
 
-## Services Offered
-- **Photography**: Specializing in portraits, events, weddings, and commercial photography.
-- **Videography**: Offering services for weddings, corporate events, social media content, and promotional videos.
-- **Editing**: Professional editing services to enhance visual storytelling.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## Portfolio Highlights
-Explore the following categories in Hammad's portfolio:
-1. **Weddings**: Capture the joy and emotions of one of life’s most significant chapters.
-2. **Events**: Documenting special gatherings and corporate functions.
-3. **Commercial Projects**: Professional photography and videography for brands and businesses.
+## React Compiler
 
-## Contact
-For inquiries or to book a session, please reach out through the contact form on this website or email Hammad directly at hammadshahid916@gmail.com . 
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-Thank you for visiting Hammad Shahid's portfolio!
+## Expanding the Oxlint configuration
+
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
