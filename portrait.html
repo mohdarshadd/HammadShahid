@@ -6,35 +6,33 @@
     <title>Photos - Hammad Shahid</title>
     <link rel="icon" type="image/png" href="image/Logo.svg">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
+    <!-- Navigation -->
     <nav class="navbar">
-        <div class="container">
-            <div class="nav-wrapper">
-                <div class="logo">
-                    <h1>Hammad Shahid</h1>
-                    <p class="tagline">Photographer | Videographer | Editor</p>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="index.html#about" class="nav-link">About</a></li>
-                    <li><a href="index.html#portfolio" class="nav-link">Portfolio</a></li>
-                    <li><a href="index.html#services" class="nav-link">Services</a></li>
-                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
-                </ul>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Hammad <span>Shahid</span></a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="index.html#services" class="nav-link">Services</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </nav>
 
-    <!-- Category Header -->
-    <section class="category-header">
+    <!-- Page Header -->
+    <section class="page-header">
         <div class="container">
             <a href="index.html#portfolio" class="back-link">
                 <i class="fas fa-arrow-left"></i> Back to Portfolio
@@ -44,7 +42,7 @@
         </div>
     </section>
 
-    <!-- Gallery Grid -->
+    <!-- Gallery -->
     <section class="gallery">
         <div class="container">
             <div class="gallery-grid">
@@ -56,7 +54,6 @@
                         </button>
                     </div>
                 </div>
-
                 <div class="gallery-item">
                     <img src="image/img2.jpg" alt="Portrait 2">
                     <div class="gallery-overlay">
@@ -65,7 +62,6 @@
                         </button>
                     </div>
                 </div>
-
                 <div class="gallery-item">
                     <img src="image/img3.jpg" alt="Portrait 3">
                     <div class="gallery-overlay">
@@ -74,7 +70,6 @@
                         </button>
                     </div>
                 </div>
-
                 <div class="gallery-item">
                     <img src="image/img4.jpg" alt="Portrait 4">
                     <div class="gallery-overlay">
@@ -83,7 +78,6 @@
                         </button>
                     </div>
                 </div>
-
                 <div class="gallery-item">
                     <img src="image/img5.jpg" alt="Portrait 5">
                     <div class="gallery-overlay">
@@ -92,7 +86,6 @@
                         </button>
                     </div>
                 </div>
-
                 <div class="gallery-item">
                     <img src="image/img6.jpg" alt="Portrait 6">
                     <div class="gallery-overlay">
@@ -101,7 +94,6 @@
                         </button>
                     </div>
                 </div>
-
                 <div class="gallery-item">
                     <img src="image/img7.jpg" alt="Portrait 7">
                     <div class="gallery-overlay">
@@ -110,7 +102,6 @@
                         </button>
                     </div>
                 </div>
-
                 <div class="gallery-item">
                     <img src="image/img8.jpg" alt="Portrait 8">
                     <div class="gallery-overlay">
@@ -119,7 +110,6 @@
                         </button>
                     </div>
                 </div>
-
                 <div class="gallery-item">
                     <img src="image/img9.jpg" alt="Portrait 9">
                     <div class="gallery-overlay">
@@ -128,7 +118,6 @@
                         </button>
                     </div>
                 </div>
-
                 <div class="gallery-item">
                     <img src="image/img10.jpg" alt="Portrait 10">
                     <div class="gallery-overlay">
@@ -137,7 +126,6 @@
                         </button>
                     </div>
                 </div>
-
                 <div class="gallery-item">
                     <img src="image/img11.jpg" alt="Portrait 11">
                     <div class="gallery-overlay">
@@ -146,7 +134,6 @@
                         </button>
                     </div>
                 </div>
-
                 <div class="gallery-item">
                     <img src="image/img12.jpg" alt="Portrait 12">
                     <div class="gallery-overlay">
@@ -159,27 +146,27 @@
         </div>
     </section>
 
-    <!-- Lightbox Modal -->
+    <!-- Lightbox -->
     <div id="lightbox" class="lightbox">
         <span class="lightbox-close">&times;</span>
         <img class="lightbox-image" src="" alt="Gallery Image">
-        <a class="lightbox-prev">&#10094;</a>
-        <a class="lightbox-next">&#10095;</a>
+        <button class="lightbox-prev">&#10094;</button>
+        <button class="lightbox-next">&#10095;</button>
     </div>
 
-    <!-- CTA Section -->
+    <!-- CTA -->
     <section class="cta-section">
         <div class="container">
             <h2>Interested in a Portrait Session?</h2>
             <p>Contact me to book your professional portrait photography session</p>
-            <a href="index.html#contact" class="cta-button">Book Now</a>
+            <a href="index.html#contact" class="btn btn-primary">Book Now</a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Hammad Shahid. All rights reserved. | Photographer & Videographer</p>
+            <p>&copy; 2026 Hammad Shahid. All rights reserved. | <span>Photographer & Videographer</span></p>
         </div>
     </footer>
 
