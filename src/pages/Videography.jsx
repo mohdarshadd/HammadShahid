@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import SEO from '../components/SEO'
 import VideoModal from '../components/VideoModal'
 
 const videos = [
@@ -30,6 +31,12 @@ export default function Videography() {
 
   return (
     <>
+      <SEO
+        title="Videography Portfolio"
+        description="Professional videography portfolio by Hammad Shahid in Lucknow. Fashion films, advertisements, promotional videos, and brand videos."
+        path="/videography"
+      />
+
       <section className="page-header">
         <div className="container">
           <Link to="/#portfolio" className="back-link">
@@ -40,15 +47,15 @@ export default function Videography() {
         </div>
       </section>
 
-      <section className="gallery">
+      <section className="gallery" aria-label="Video gallery">
         <div className="container">
           <div className="video-gallery-grid">
             {videos.map((v, i) => (
               <div className="video-gallery-item" key={i}>
                 <div className="video-container">
-                  <img src={`/image/${v.thumb}`} alt={v.label} className="video-thumbnail" />
+                  <img src={`/image/${v.thumb}`} alt={`${v.label} by Hammad Shahid`} className="video-thumbnail" loading="lazy" />
                   <div className="video-overlay">
-                    <button className="play-btn" onClick={() => setModalSrc(v.src)}>
+                    <button className="play-btn" onClick={() => setModalSrc(v.src)} aria-label={`Play ${v.label}`}>
                       <i className="fas fa-play"></i>
                     </button>
                     <p>{v.label}</p>

@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import SEO from '../components/SEO'
 import Lightbox from '../components/Lightbox'
 
 const images = [
@@ -18,6 +19,12 @@ export default function Portrait() {
 
   return (
     <>
+      <SEO
+        title="Photography Portfolio"
+        description="Professional portrait photography gallery by Hammad Shahid in Lucknow. View portrait sessions, wedding photos, and event photography."
+        path="/portrait"
+      />
+
       <section className="page-header">
         <div className="container">
           <Link to="/#portfolio" className="back-link">
@@ -28,14 +35,14 @@ export default function Portrait() {
         </div>
       </section>
 
-      <section className="gallery">
+      <section className="gallery" aria-label="Photo gallery">
         <div className="container">
           <div className="gallery-grid">
             {images.map((img, i) => (
               <div className="gallery-item" key={img} onClick={() => openLightbox(i)}>
-                <img src={`/image/${img}`} alt={`Portrait ${i + 1}`} />
+                <img src={`/image/${img}`} alt={`Portrait photography ${i + 1} by Hammad Shahid`} loading="lazy" />
                 <div className="gallery-overlay">
-                  <button className="lightbox-btn" onClick={(e) => { e.stopPropagation(); openLightbox(i) }}>
+                  <button className="lightbox-btn" onClick={(e) => { e.stopPropagation(); openLightbox(i) }} aria-label="Expand image">
                     <i className="fas fa-expand"></i>
                   </button>
                 </div>
